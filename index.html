@@ -236,64 +236,62 @@ function bf(n){return BANDEIRAS[n.toLowerCase()]||'🏳️';}
 
 // TODOS OS JOGOS DA COPA 2026
 const JOGOS = [
-  // GRUPO A
+  // DIA 18/06
   {id:'g01',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-18',hora:'13:00',casa:'África do Sul',fora:'México'},
-  {id:'g02',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-18',hora:'22:00',casa:'Coreia do Sul',fora:'Tchéquia'},
-  {id:'g25',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-24',hora:'17:00',casa:'México',fora:'Coreia do Sul'},
-  {id:'g26',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-24',hora:'17:00',casa:'Tchéquia',fora:'África do Sul'},
-  // GRUPO B
   {id:'g03',fase:'Fase de Grupos',grupo:'Grupo B',data:'2026-06-18',hora:'16:00',casa:'Suíça',fora:'Bósnia e Herz.'},
   {id:'g04',fase:'Fase de Grupos',grupo:'Grupo B',data:'2026-06-18',hora:'19:00',casa:'Canadá',fora:'Catar'},
-  {id:'g27',fase:'Fase de Grupos',grupo:'Grupo B',data:'2026-06-24',hora:'20:00',casa:'Canadá',fora:'Suíça'},
-  {id:'g28',fase:'Fase de Grupos',grupo:'Grupo B',data:'2026-06-24',hora:'20:00',casa:'Catar',fora:'Bósnia e Herz.'},
-  // GRUPO C
+  {id:'g02',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-18',hora:'22:00',casa:'Coreia do Sul',fora:'Tchéquia'},
+  // DIA 19/06
+  {id:'g07',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-19',hora:'16:00',casa:'EUA',fora:'Austrália'},
   {id:'g05',fase:'Fase de Grupos',grupo:'Grupo C',data:'2026-06-19',hora:'19:00',casa:'Escócia',fora:'Marrocos'},
   {id:'g06',fase:'Fase de Grupos',grupo:'Grupo C',data:'2026-06-19',hora:'21:30',casa:'Brasil',fora:'Haiti'},
-  {id:'g29',fase:'Fase de Grupos',grupo:'Grupo C',data:'2026-06-25',hora:'17:00',casa:'Brasil',fora:'Escócia'},
-  {id:'g30',fase:'Fase de Grupos',grupo:'Grupo C',data:'2026-06-25',hora:'17:00',casa:'Haiti',fora:'Marrocos'},
-  // GRUPO D
-  {id:'g07',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-19',hora:'16:00',casa:'EUA',fora:'Austrália'},
+  // DIA 20/06
   {id:'g08',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-20',hora:'00:00',casa:'Turquia',fora:'Paraguai'},
-  {id:'g31',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-25',hora:'20:00',casa:'EUA',fora:'Turquia'},
-  {id:'g32',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-25',hora:'20:00',casa:'Austrália',fora:'Paraguai'},
-  // GRUPO E
+  {id:'g11',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-20',hora:'14:00',casa:'Holanda',fora:'Suécia'},
   {id:'g09',fase:'Fase de Grupos',grupo:'Grupo E',data:'2026-06-20',hora:'17:00',casa:'Alemanha',fora:'Costa do Marfim'},
   {id:'g10',fase:'Fase de Grupos',grupo:'Grupo E',data:'2026-06-20',hora:'21:00',casa:'Equador',fora:'Curaçao'},
-  {id:'g33',fase:'Fase de Grupos',grupo:'Grupo E',data:'2026-06-26',hora:'15:00',casa:'Alemanha',fora:'Equador'},
-  {id:'g34',fase:'Fase de Grupos',grupo:'Grupo E',data:'2026-06-26',hora:'15:00',casa:'Costa do Marfim',fora:'Curaçao'},
-  // GRUPO F
-  {id:'g11',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-20',hora:'14:00',casa:'Holanda',fora:'Suécia'},
+  // DIA 21/06
   {id:'g12',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-21',hora:'01:00',casa:'Tunísia',fora:'Japão'},
-  {id:'g35',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-26',hora:'17:00',casa:'Holanda',fora:'Tunísia'},
-  {id:'g36',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-26',hora:'17:00',casa:'Suécia',fora:'Japão'},
-  // GRUPO G
-  {id:'g13',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-21',hora:'16:00',casa:'Bélgica',fora:'Irã'},
-  {id:'g14',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-21',hora:'22:00',casa:'Nova Zelândia',fora:'Egito'},
-  {id:'g37',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-26',hora:'19:00',casa:'Bélgica',fora:'Nova Zelândia'},
-  {id:'g38',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-26',hora:'19:00',casa:'Irã',fora:'Egito'},
-  // GRUPO H
   {id:'g15',fase:'Fase de Grupos',grupo:'Grupo H',data:'2026-06-21',hora:'13:00',casa:'Espanha',fora:'Arábia Saudita'},
+  {id:'g13',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-21',hora:'16:00',casa:'Bélgica',fora:'Irã'},
   {id:'g16',fase:'Fase de Grupos',grupo:'Grupo H',data:'2026-06-21',hora:'19:00',casa:'Uruguai',fora:'Cabo Verde'},
-  {id:'g39',fase:'Fase de Grupos',grupo:'Grupo H',data:'2026-06-26',hora:'20:30',casa:'Espanha',fora:'Uruguai'},
-  {id:'g40',fase:'Fase de Grupos',grupo:'Grupo H',data:'2026-06-26',hora:'20:30',casa:'Arábia Saudita',fora:'Cabo Verde'},
-  // GRUPO I
+  {id:'g14',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-21',hora:'22:00',casa:'Nova Zelândia',fora:'Egito'},
+  // DIA 22/06
+  {id:'g20',fase:'Fase de Grupos',grupo:'Grupo J',data:'2026-06-22',hora:'00:00',casa:'Jordânia',fora:'Argélia'},
+  {id:'g19',fase:'Fase de Grupos',grupo:'Grupo J',data:'2026-06-22',hora:'14:00',casa:'Argentina',fora:'Áustria'},
   {id:'g17',fase:'Fase de Grupos',grupo:'Grupo I',data:'2026-06-22',hora:'18:00',casa:'França',fora:'Iraque'},
   {id:'g18',fase:'Fase de Grupos',grupo:'Grupo I',data:'2026-06-22',hora:'21:00',casa:'Noruega',fora:'Senegal'},
+  // DIA 23/06
+  {id:'g21',fase:'Fase de Grupos',grupo:'Grupo K',data:'2026-06-23',hora:'14:00',casa:'Portugal',fora:'Uzbequistão'},
+  {id:'g23',fase:'Fase de Grupos',grupo:'Grupo L',data:'2026-06-23',hora:'17:00',casa:'Inglaterra',fora:'Gana'},
+  {id:'g22',fase:'Fase de Grupos',grupo:'Grupo K',data:'2026-06-23',hora:'21:00',casa:'Colômbia',fora:'RD Congo'},
+  {id:'g24',fase:'Fase de Grupos',grupo:'Grupo L',data:'2026-06-23',hora:'21:00',casa:'Panamá',fora:'Croácia'},
+  // DIA 24/06
+  {id:'g25',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-24',hora:'17:00',casa:'México',fora:'Coreia do Sul'},
+  {id:'g26',fase:'Fase de Grupos',grupo:'Grupo A',data:'2026-06-24',hora:'17:00',casa:'Tchéquia',fora:'África do Sul'},
+  {id:'g27',fase:'Fase de Grupos',grupo:'Grupo B',data:'2026-06-24',hora:'20:00',casa:'Canadá',fora:'Suíça'},
+  {id:'g28',fase:'Fase de Grupos',grupo:'Grupo B',data:'2026-06-24',hora:'20:00',casa:'Catar',fora:'Bósnia e Herz.'},
+  // DIA 25/06
+  {id:'g29',fase:'Fase de Grupos',grupo:'Grupo C',data:'2026-06-25',hora:'17:00',casa:'Brasil',fora:'Escócia'},
+  {id:'g30',fase:'Fase de Grupos',grupo:'Grupo C',data:'2026-06-25',hora:'17:00',casa:'Haiti',fora:'Marrocos'},
+  {id:'g31',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-25',hora:'20:00',casa:'EUA',fora:'Turquia'},
+  {id:'g32',fase:'Fase de Grupos',grupo:'Grupo D',data:'2026-06-25',hora:'20:00',casa:'Austrália',fora:'Paraguai'},
+  // DIA 26/06
+  {id:'g33',fase:'Fase de Grupos',grupo:'Grupo E',data:'2026-06-26',hora:'15:00',casa:'Alemanha',fora:'Equador'},
+  {id:'g34',fase:'Fase de Grupos',grupo:'Grupo E',data:'2026-06-26',hora:'15:00',casa:'Costa do Marfim',fora:'Curaçao'},
+  {id:'g35',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-26',hora:'17:00',casa:'Holanda',fora:'Tunísia'},
+  {id:'g36',fase:'Fase de Grupos',grupo:'Grupo F',data:'2026-06-26',hora:'17:00',casa:'Suécia',fora:'Japão'},
+  {id:'g37',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-26',hora:'19:00',casa:'Bélgica',fora:'Nova Zelândia'},
+  {id:'g38',fase:'Fase de Grupos',grupo:'Grupo G',data:'2026-06-26',hora:'19:00',casa:'Irã',fora:'Egito'},
+  {id:'g39',fase:'Fase de Grupos',grupo:'Grupo H',data:'2026-06-26',hora:'20:30',casa:'Espanha',fora:'Uruguai'},
+  {id:'g40',fase:'Fase de Grupos',grupo:'Grupo H',data:'2026-06-26',hora:'20:30',casa:'Arábia Saudita',fora:'Cabo Verde'},
+  // DIA 27/06
   {id:'g41',fase:'Fase de Grupos',grupo:'Grupo I',data:'2026-06-27',hora:'15:00',casa:'França',fora:'Noruega'},
   {id:'g42',fase:'Fase de Grupos',grupo:'Grupo I',data:'2026-06-27',hora:'15:00',casa:'Iraque',fora:'Senegal'},
-  // GRUPO J
-  {id:'g19',fase:'Fase de Grupos',grupo:'Grupo J',data:'2026-06-22',hora:'14:00',casa:'Argentina',fora:'Áustria'},
-  {id:'g20',fase:'Fase de Grupos',grupo:'Grupo J',data:'2026-06-23',hora:'00:00',casa:'Jordânia',fora:'Argélia'},
   {id:'g43',fase:'Fase de Grupos',grupo:'Grupo J',data:'2026-06-27',hora:'17:00',casa:'Argentina',fora:'Jordânia'},
   {id:'g44',fase:'Fase de Grupos',grupo:'Grupo J',data:'2026-06-27',hora:'17:00',casa:'Argélia',fora:'Áustria'},
-  // GRUPO K
-  {id:'g21',fase:'Fase de Grupos',grupo:'Grupo K',data:'2026-06-23',hora:'14:00',casa:'Portugal',fora:'Uzbequistão'},
-  {id:'g22',fase:'Fase de Grupos',grupo:'Grupo K',data:'2026-06-23',hora:'21:00',casa:'Colômbia',fora:'RD Congo'},
   {id:'g45',fase:'Fase de Grupos',grupo:'Grupo K',data:'2026-06-27',hora:'19:00',casa:'Portugal',fora:'Colômbia'},
   {id:'g46',fase:'Fase de Grupos',grupo:'Grupo K',data:'2026-06-27',hora:'19:00',casa:'Uzbequistão',fora:'RD Congo'},
-  // GRUPO L
-  {id:'g23',fase:'Fase de Grupos',grupo:'Grupo L',data:'2026-06-23',hora:'17:00',casa:'Inglaterra',fora:'Gana'},
-  {id:'g24',fase:'Fase de Grupos',grupo:'Grupo L',data:'2026-06-23',hora:'21:00',casa:'Panamá',fora:'Croácia'},
   {id:'g47',fase:'Fase de Grupos',grupo:'Grupo L',data:'2026-06-27',hora:'20:30',casa:'Inglaterra',fora:'Panamá'},
   {id:'g48',fase:'Fase de Grupos',grupo:'Grupo L',data:'2026-06-27',hora:'20:30',casa:'Gana',fora:'Croácia'},
   // MATA-MATA
