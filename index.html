@@ -399,16 +399,25 @@ function formatData(data, hora) {
 // CALCULAR PONTOS
 function calcPontos(pCasa, pFora, rCasa, rFora) {
   if(rCasa===null||rFora===null) return null;
-  pCasa=parseInt(pCasa); pFora=parseInt(pFora);
-  rCasa=parseInt(rCasa); rFora=parseInt(rFora);
+
+  pCasa=parseInt(pCasa);
+  pFora=parseInt(pFora);
+  rCasa=parseInt(rCasa);
+  rFora=parseInt(rFora);
+
   if(isNaN(pCasa)||isNaN(pFora)) return null;
-  if(pCasa===rCasa && pFora===rFora) return 10;
-  const pRes = pCasa>pFora?'c':pCasa<pFora?'f':'e';
-  const rRes = rCasa>rFora?'c':rCasa<rFora?'f':'e';
-  if(pRes!==rRes) return 0;
-  if(pRes==='e') return 5;
-  if((pCasa-pFora)===(rCasa-rFora)) return 7;
-  return 5;
+
+  // Placar exato = 3 pontos
+  if(pCasa===rCasa && pFora===rFora) return 3;
+
+  const pRes = pCasa>pFora ? 'c' : pCasa<pFora ? 'f' : 'e';
+  const rRes = rCasa>rFora ? 'c' : rCasa<rFora ? 'f' : 'e';
+
+  // Acertou vencedor ou empate = 1 ponto
+  if(pRes===rRes) return 1;
+
+  // Errou tudo = 0 pontos
+  return 0;
 }
 
 // RENDER JOGOS
